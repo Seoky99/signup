@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Norse', sans-serif;
+    src: url("fonts/Norse-Bold.otf") format("opentype");
+}
+
+body {
+    padding: 0; 
+    margin: 0;
+    height: 100vh;
+    display:flex; 
+}
+
+.img-container {
+    background-image: url(./images/unsplashimg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 4;
+}
+
+#leaf-img {
+    object-fit: cover;
+}
+
+.form-container {
+    flex: 7;
+    display: flex; 
+    flex-direction: column; 
+    padding: 30px;
+}
+
+.input-container {
+    display: flex; 
+    flex-direction: column;
+}
+
+.input-row {
+    display:flex; 
+    gap: 15%;
+}
+
+.persuasive p {
+    font-size: 2rem; 
+    font-weight: bold; 
+    font-family: 'Norse', sans-serif; 
+}
+
+label {
+    display:block;
+}
+
+form > fieldset {
+    display: flex; 
+    flex-direction: column;
+    gap: 30px;
+}
+
+button {
+    padding: 20px; 
+    background-color: green; 
+    color: white; 
+}
