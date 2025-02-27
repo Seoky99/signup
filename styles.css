@@ -40,7 +40,7 @@ body {
     flex: 7;
     display: flex; 
     flex-direction: column; 
-    background-color: lightgray;
+    background-color: #F5F5F5;
 }
 
 .input-container {
@@ -55,8 +55,6 @@ body {
 }
 
 .persuasive {
-
-    background-color: lightgray;
     padding: 30px;
 
     & p {
@@ -67,30 +65,45 @@ body {
     }
 
     & p:first-child {
-        margin-top: 15%;
+        margin-top: 8%;
     }
-    
 }
 
 label {
     display:block;
 }
 
+legend {
+    font-size: 2rem;
+    padding-top: 20px;
+}
+
 form > fieldset {
+    padding: 30px;
     display: flex; 
     flex-direction: column;
     gap: 30px;
+    border: 0;
+    border-bottom: 1px solid black;
 }
 
 button {
-    padding: 10px 30px; 
-    background-color: green; 
+    padding: 10px 50px; 
+    background-color: #596D48;
     color: white; 
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-family: "Norse", serif;
     border-radius: 12px;
 }
 
-input:focus {
-    border: 2px solid blue; 
+input {
+    padding: 5px 15px;
+    
+    &:focus {
+        border: 2px solid blue; 
+    }
+
+    &:invalid {
+        border: 2px solid red;
+    }
 }

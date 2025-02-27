@@ -27,7 +27,7 @@
         <div class="input-container">
             <form>
                 <fieldset>
-                    <legend> Let's do this! </legend>
+                    <legend>Let's do this!</legend>
                     <div class="input-row">
                         <div>
                             <label for="first-name">First Name</label>
@@ -41,7 +41,7 @@
                     <div class="input-row">
                         <div>
                             <label for="email">Email</label>
-                            <input type="text" id="email">
+                            <input type="email" id="email">
                         </div>
                         <div>
                             <label for="phone">Phone Number</label>
@@ -51,11 +51,11 @@
                     <div class="input-row">
                         <div>
                             <label for="password">Password</label>
-                            <input type="text" id="password">
+                            <input type="password" id="password" minlength="4" maxlength="10">
                         </div>
                         <div>
                             <label for="confirm">Confirm Password</label>
-                            <input type="text" id="confirm">
+                            <input type="password" id="confirm" minlength="4" maxlength="10">
                         </div>
                     </div>
                 </fieldset>
@@ -64,7 +64,7 @@
                         <button type="submit">Create Account</button>
                     </div>
                     <div>
-                        <p> Already have an account? Log in here! </p>
+                        <p> Already have an account? Log in <a href="http://google.com"> here! </a> </p>
                     </div>
                 </fieldset>
             </form>
